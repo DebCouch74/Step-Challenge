@@ -9,8 +9,8 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
-export const CHALLENGE_START = new Date('2026-05-20')
-export const CHALLENGE_END = new Date('2026-06-20')
+export const CHALLENGE_START = new Date('2026-05-20T12:00:00')
+export const CHALLENGE_END = new Date('2026-06-20T12:00:00')
 export const CHALLENGE_NAME = 'Team Step Challenge 2026'
 
 export const PRIZES = [
