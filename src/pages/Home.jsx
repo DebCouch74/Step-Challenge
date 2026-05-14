@@ -17,8 +17,10 @@ export default function Home() {
       <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <img src="/Logo.png" alt="AIRadigm Solutions" className="h-16 sm:h-20 object-contain drop-shadow-lg" />
+            <div className="flex justify-center mb-4">
+              <div className="bg-white/20 rounded-full p-4">
+                <Footprints className="w-10 h-10" />
+              </div>
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight">
               Team Step Challenge 2026

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { CHALLENGE_NAME } from '../lib/supabase'
-import { Footprints, LogOut, LayoutDashboard, ShieldCheck } from 'lucide-react'
+import { LogOut, LayoutDashboard, ShieldCheck } from 'lucide-react'
 
 export default function Navbar() {
   const { user, profile, signOut } = useAuth()
@@ -16,10 +16,8 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 font-bold text-blue-600 text-lg">
-            <Footprints className="w-6 h-6" />
-            <span className="hidden sm:block">{CHALLENGE_NAME}</span>
-            <span className="sm:hidden">Step Challenge</span>
+          <Link to="/" className="flex items-center">
+            <img src="/Logo.png" alt="AIRadigm Solutions" className="h-8 sm:h-10 object-contain" />
           </Link>
 
           <div className="flex items-center gap-2">
