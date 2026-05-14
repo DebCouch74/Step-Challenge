@@ -16,7 +16,9 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-3">
+            <img src="/Logo.png" alt="AIRadigm Solutions" className="h-8 sm:h-10 object-contain" />
+            <div className="w-px h-8 bg-gray-200" />
             <img src="/KES-Logo.png" alt="KES Logo" className="h-8 sm:h-10 object-contain" />
           </Link>
 
